@@ -1,0 +1,66 @@
+$color-primary: black;
+$color-secondary: #b7b4b4;
+$font-weight-primary: 100;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $color-primary;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  &-section {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(12px);
+  }
+  &-nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    &-item {
+      & > a {
+        color: $color-secondary;
+        font-weight: $font-weight-primary;
+      }
+      & > a:hover {
+        color: $color-primary;
+        font-weight: $font-weight-primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &-nav {
+      flex-direction: column;
+      align-items: center;
+      &-item {
+        & > a {
+          color: $color-secondary;
+        }
+        & > a:hover {
+          color: $color-primary;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
