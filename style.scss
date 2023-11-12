@@ -1,6 +1,8 @@
 $color-primary: black;
 $color-secondary: #b7b4b4;
 $font-weight-primary: 100;
+$font-weight-title: 600;
+$font-weight-subtitle: 400;
 
 * {
   margin: 0;
@@ -62,5 +64,19 @@ a {
         }
       }
     }
+  }
+}
+
+.home {
+  &-section {
+    padding: 100px 0;
+    text-align: center;
+  }
+  &-title {
+    font-size: 60px;
+    font-weight: $font-weight-title;
+  }
+  &-subtitle {
+    font-weight: $font-weight-subtitle;
   }
 }

@@ -52,4 +52,15 @@ a {
     color: black;
     text-decoration: underline;
   }
+}
+.home-section {
+  padding: 100px 0;
+  text-align: center;
+}
+.home-title {
+  font-size: 60px;
+  font-weight: 600;
+}
+.home-subtitle {
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
