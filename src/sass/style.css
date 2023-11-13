@@ -63,4 +63,54 @@ a {
 }
 .home-subtitle {
   font-weight: 400;
+}
+
+.works-section {
+  padding: 100px 0;
+}
+.works-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 450;
+}
+.works-list-line1 {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px 0;
+}
+.works-list-line2 {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px 0;
+}
+.works-item-line1 > a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.works-item-line2 > a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .works-list-line1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .works-list-line2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .works-item-line1 > a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  .works-item-line2 > a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
 }/*# sourceMappingURL=style.css.map */
