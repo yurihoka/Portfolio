@@ -170,4 +170,12 @@ a {
 .contact-item > img {
   width: 40px;
   height: 40px;
+}
+
+.footer-message {
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 20px 0;
+  background-color: #b7b4b4;
 }/*# sourceMappingURL=style.css.map */
