@@ -37,11 +37,25 @@ a {
 .header-nav-item > a {
   color: #b7b4b4;
   font-weight: 100;
+  position: relative;
 }
 .header-nav-item > a:hover {
   color: black;
-  font-weight: 100;
-  text-decoration: underline;
+}
+.header-nav-item > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: black;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+.header-nav-item > a:hover::after {
+  transform: scale(1, 1);
 }
 
 @media screen and (max-width: 768px) {
