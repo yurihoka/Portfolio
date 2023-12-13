@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100vw;
 }
 
 body {
@@ -21,10 +22,10 @@ a {
 }
 
 .header-section {
-  width: 100%;
+  max-width: 100%;
   padding: 20px 0;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   top: 0;
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
@@ -35,7 +36,7 @@ a {
   gap: 50px;
 }
 .header-nav-item > a {
-  color: #b7b4b4;
+  color: #a8a4a4;
   font-weight: 100;
   position: relative;
 }
@@ -62,9 +63,10 @@ a {
   .header-nav {
     flex-direction: column;
     align-items: center;
+    gap: 0;
   }
   .header-nav-item > a {
-    color: #b7b4b4;
+    color: #dad6d6;
   }
   .header-nav-item > a:hover {
     color: black;
@@ -72,24 +74,34 @@ a {
   }
 }
 .home-section {
-  padding: 100px 0;
-  text-align: center;
+  padding: 150px 0;
 }
 .home-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.home-title > h1 {
   font-size: 60px;
   font-weight: 600;
+  text-align: center;
 }
-.home-subtitle {
-  font-weight: 400;
+.home-title > p {
+  padding-left: 25px;
+  padding-top: 20px;
 }
 
 .works-section {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 .works-title {
-  text-align: center;
+  padding: 25px 0;
+}
+.works-title > h2 {
   font-size: 40px;
   font-weight: 450;
+  text-align: center;
 }
 .works-list-line1 {
   display: flex;
@@ -97,18 +109,8 @@ a {
   gap: 100px;
   padding: 50px 0;
 }
-.works-list-line2 {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  padding: 50px 0;
-}
 .works-item-line1 > a:hover {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-.works-item-line2 > a:hover {
-  opacity: 0.5;
+  opacity: 0.2;
   transition: 0.3s;
 }
 
@@ -118,24 +120,18 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .works-list-line2 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .works-item-line1 > a:hover {
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-  .works-item-line2 > a:hover {
     opacity: 0.5;
     transition: 0.3s;
   }
 }
 .skills-section {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 .skills-title {
+  padding: 25px 0;
+}
+.skills-title > h2 {
   text-align: center;
   font-size: 40px;
   font-weight: 450;
@@ -163,9 +159,12 @@ a {
   }
 }
 .contact-section {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 .contact-title {
+  padding: 25px 0;
+}
+.contact-title > h2 {
   text-align: center;
   font-size: 40px;
   font-weight: 450;
@@ -201,5 +200,5 @@ a {
   font-weight: 300;
   font-size: 15px;
   padding: 20px 0;
-  background-color: #b7b4b4;
+  background-color: #dad6d6;
 }/*# sourceMappingURL=style.css.map */
