@@ -21,4 +21,12 @@ a {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=global.css.map */
+.footer-message {
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 20px 0;
+  background-color: #dad6d6;
+}
+
+/*# sourceMappingURL=footer.css.map */

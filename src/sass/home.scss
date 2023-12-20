@@ -1,0 +1,30 @@
+@import "./global.scss";
+
+.home {
+  &-section {
+    padding: 150px 0;
+  }
+  &-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    & > h1 {
+      font-size: 60px;
+      font-weight: $font-weight-title;
+      text-align: center;
+    }
+    & > p {
+      padding-left: 25px;
+      padding-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    &-section {
+      padding: 0;
+    }
+  }
+}
