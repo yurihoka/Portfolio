@@ -10,12 +10,29 @@
   <body>
     <header class="header-section">
       <div class="header-wrapper">
-        <ul class="header-nav">
-          <li class="header-nav-item"><a href="#home">HOME</a></li>
-          <li class="header-nav-item"><a href="#works">WORKS</a></li>
-          <li class="header-nav-item"><a href="#skills">SKILLS</a></li>
-          <li class="header-nav-item"><a href="#contact">CONTACT</a></li>
-        </ul>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="#home">HOME</a></li>
+            <li class="header-nav-item"><a href="#works">WORKS</a></li>
+            <li class="header-nav-item"><a href="#skills">SKILLS</a></li>
+            <li class="header-nav-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+          <div class="header-burger"></div>
+          <div class="header-burger-list">
+            <li class="header-burger-item">
+              <a class="header-burger-link" href="#home">HOME</a>
+            </li>
+            <li class="header-burger-item">
+              <a class="header-burger-link" href="#works">WORKS</a>
+            </li>
+            <li class="header-burger-item">
+              <a class="header-burger-link" href="#skills">SKILLS</a>
+            </li>
+            <li class="header-burger-item">
+              <a class="header-burger-link" href="#contact">CONTACT</a>
+            </li>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -109,5 +126,11 @@
         <p class="footer-message">Code by YURIKA HOKAMA@2023</p>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/js/burger.js"></script>
   </body>
 </html>
