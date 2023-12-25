@@ -2,59 +2,91 @@
 
 .header {
   &-section {
-    max-width: 100%;
+    width: 100%;
     padding: 20px 0;
     overflow: hidden;
     position: sticky;
     top: 0;
-    backdrop-filter: blur(12px);
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  &-wrapper {
+    display: flex;
+    align-items: center;
   }
   &-nav {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    align-items: center;
+    gap: 40px;
+    margin: 0 0 0 auto;
+    &-list {
+      gap: 40px;
+      display: flex;
+      align-items: center;
+    }
     &-item {
       & > a {
-        color: $color-tertiary;
+        color: $color-primary;
         font-weight: $font-weight-primary;
-        position: relative;
       }
       & > a:hover {
-        color: $color-primary;
-      }
-      & > a::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 10%;
-        width: 80%;
-        height: 2px;
-        background: $color-primary;
-        transition: all 0.3s;
-        transform: scale(0, 1);
-        transform-origin: center top;
-      }
-      & > a:hover::after {
-        transform: scale(1, 1);
+        color: $color-tertiary;
       }
     }
+  }
+  &-burger {
+    &-list {
+      width: 100vw;
+      height: 100vh;
+      background-color: $color-secondary;
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      &.is-active {
+        display: flex;
+      }
+    }
+    &-item {
+      & > a {
+        color: $color-primary;
+        font-weight: $font-weight-primary;
+      }
+      & > a:hover {
+        color: $color-tertiary;
+      }
+    }
+  }
+  &-burger:hover {
+    cursor: pointer;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    &-nav {
-      flex-direction: column;
-      align-items: center;
-      gap: 3px;
-      &-item {
-        & > a {
-          color: $color-secondary;
-        }
-        & > a:hover {
-          color: $color-primary;
-          text-decoration: underline;
-        }
+    &-nav-list {
+      display: none;
+    }
+    &-burger {
+      width: 40px;
+      height: 40px;
+      background-image: url(../Images/burger.png);
+      margin-right: 20px;
+      background-size: 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 2;
+      &.is-active {
+        background-image: url(../Images/close.png);
       }
     }
   }
