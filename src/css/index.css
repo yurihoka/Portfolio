@@ -217,8 +217,8 @@ a {
   padding: 50px 0;
 }
 .works-list-line1 img {
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
 }
 .works-item-line1 > a:hover {
   opacity: 0.2;
