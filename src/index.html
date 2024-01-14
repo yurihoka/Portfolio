@@ -97,27 +97,36 @@
           <h2>CONTACT</h2>
         </div>
         <div class="contact-wrapper">
-          <p class="contact-message">
+          <!-- <p class="contact-message">
             Feel free to reach out if you have a question or just want to
             connect.
-          </p>
-          <ul class="contact-list">
-            <li class="contact-item">
-              <a href="https://github.com/yurihoka?tab=projects" target="_blank"
-                ><img src="Images/github_icon.png"
-              /></a>
-            </li>
-            <li class="contact-item">
-              <a href="https://www.linkedin.com/in/yurihoka/" target="_blank"
-                ><img src="Images/linkedin_icon.png"
-              /></a>
-            </li>
-            <li class="contact-item">
-              <a href="mailto:yurihoka@gmail.com" target="_blank"
-                ><img src="Images/gmail_icon.png"
-              /></a>
-            </li>
-          </ul>
+          </p> -->
+          <div class="contact-form">
+            <form action="" method="post">
+              <div class="contact-item">
+                <label class="label"><p>NAME</p></label>
+                <input type="text" class="inputs" name="name" required />
+              </div>
+              <div class="contact-item">
+                <label class="label"><p>EMAIL</p></label>
+                <input type="email" class="inputs" name="email" required />
+              </div>
+              <div class="contact-item">
+                <label class="label"><p>MESSAGE</p></label>
+                <textarea
+                  class="inputs"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <!-- <div class="contact-item"> -->
+              <div class="contact-button">
+                <input type="submit" class="button" value="SUBMIT" />
+              </div>
+              <!-- </div> -->
+            </form>
+          </div>
         </div>
       </div>
     </main>
