@@ -29,6 +29,13 @@
       & > a {
         color: $color-primary;
         font-weight: $font-weight-primary;
+        & > img {
+          width: 20px;
+          height: 20px;
+        }
+        & > img:hover {
+          color: $color-tertiary;
+        }
       }
       & > a:hover {
         color: $color-tertiary;
