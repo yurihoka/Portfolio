@@ -25,6 +25,9 @@
   .home {
     &-section {
       padding: 0;
+      & > h1 {
+        font-size: 53px;
+      }
     }
   }
 }
